@@ -1,0 +1,134 @@
+.doubt-solver-card {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #f8fafc;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  padding: 32px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s;
+}
+
+.doubt-solver-result-scroll {
+  max-height: 220px;
+  min-height: 48px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 12px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.doubt-solver-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.subject-badge {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.subject-badge.physics { background: #1976d2; }
+.subject-badge.chemistry { background: #43a047; }
+.subject-badge.maths { background: #fbc02d; color: #222; }
+.subject-badge.biology { background: #8e24aa; }
+
+.doubt-solver-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: #222;
+}
+
+.doubt-solver-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.doubt-solver-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.doubt-solver-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+  background: #fff;
+}
+
+.doubt-solver-input:focus {
+  border-color: #1976d2;
+}
+
+.doubt-solver-btn {
+  background: linear-gradient(90deg, #1976d2 60%, #43a047 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 22px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doubt-solver-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.doubt-solver-result {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 14px;
+  min-height: 48px;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.doubt-solver-loading {
+  color: #1976d2;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #1976d2;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
